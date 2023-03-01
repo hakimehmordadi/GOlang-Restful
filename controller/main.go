@@ -38,8 +38,8 @@ func Download(n string) (string, []byte, error) {
 	if err != nil {
 		return "", nil, err
 	}
+	// detect the content type of file
 	m := http.DetectContentType(b[:512])
 
 	return m, b, nil
 }
-
