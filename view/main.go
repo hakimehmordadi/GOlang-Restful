@@ -52,3 +52,4 @@ func StartServer() {
 	})
 	_ = router.Run(":8080")
 }
+
